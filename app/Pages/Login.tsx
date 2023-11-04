@@ -1,4 +1,4 @@
-import { Text, StyleSheet, View, StatusBar, TextInput, TouchableOpacity, ScrollView, SafeAreaView } from 'react-native'
+import { Text, StyleSheet, View, StatusBar, TextInput, TouchableOpacity, ScrollView, SafeAreaView ,Image} from 'react-native'
 import React, { Component, useState } from 'react'
 
 
@@ -51,6 +51,9 @@ export default class Register extends Component {
                 <Text style={{ color: 'blue', fontSize: 15, fontFamily: 'roboto' ,fontWeight:'bold'}}>fORGOT PASSWORD?</Text>
                </View>
               </TouchableOpacity>
+            </View>
+            <View style={styles.img}>
+              <Image source={require('../Assets/houses.jpg')} ></Image>
             </View>
 
           </View>
@@ -109,6 +112,16 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     
     padding:10
+  },
+  img:{
+    flex: 1,
+
+    marginTop: 300,
+    height: '100%',
+    width: '100%',
+
+    alignItems: 'center',
+
   }
 
 
