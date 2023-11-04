@@ -1,8 +1,0 @@
-{
-  "dependencies": {
-    "react-navigation": "^5.0.0"
-  },
-  "devDependencies": {
-    "@types/react-navigation": "^3.4.0"
-  }
-}
