@@ -13,7 +13,7 @@ export default class Register extends Component {
           <StatusBar backgroundColor="white" barStyle="dark-content" />
           <View style={styles.header}>
             <TouchableOpacity>
-              < Arrowleft name='arrowleft' size={30} color="#ffff" />
+              < Arrowleft name='arrowleft' size={30} color="black" />
 
             </TouchableOpacity>
             <Text style={{fontSize:25,color:'black'}}>Login</Text>
@@ -108,7 +108,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     
-    padding:5
+    padding:10
   }
 
 
