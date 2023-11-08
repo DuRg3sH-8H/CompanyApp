@@ -1,6 +1,6 @@
 import { Text, StyleSheet, View, StatusBar, TextInput, TouchableOpacity, ScrollView, SafeAreaView, Image } from 'react-native'
 import React, { Component, useState } from 'react'
-import Icons from 'react-native-vector-icons/'
+
 
 
 //import Arrowleft from 'react-native-vector-icons/AntDesign'
