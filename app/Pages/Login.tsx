@@ -1,8 +1,7 @@
 import { Text, StyleSheet, View, StatusBar, TextInput, TouchableOpacity, ScrollView, SafeAreaView, Image } from 'react-native'
 import React, { Component, useState } from 'react'
-
-
-//import Arrowleft from 'react-native-vector-icons/AntDesign'
+import { Icon } from 'react-native-vector-icons/Icon'
+import Icons from '../Components/Icons'
 
 export default class Register extends Component {
   render() {
@@ -13,31 +12,33 @@ export default class Register extends Component {
           <StatusBar backgroundColor="white" barStyle="dark-content" />
           <View style={styles.header}>
             <TouchableOpacity>
-              {/* < Arrowleft name='arrowleft' size={30} color="black" /> */}
+              <Icons name = "arrowleft"/>
 
             </TouchableOpacity>
-            <Text style={{ fontSize: 25, color: 'black' }}>Login</Text>
-
+            <Text style={{ fontSize: 25, color: 'black', paddingLeft:24 }}>Login</Text>
           </View>
+          <View
+            style={{
+              borderBottomColor: 'black',
+              borderBottomWidth: StyleSheet.hairlineWidth,
+            }}
+          />
           <View style={styles.container}>
-
-
-
             <View>
-
               <TextInput
                 style={styles.textinput}
-                placeholder='Input Email Address' />
+                placeholder='Email Address' placeholderTextColor="#999999"/>
             </View>
             <View>
 
               <TextInput
                 style={styles.textinput}
-                placeholder='password'
+                placeholder='Password'
 
                 autoCapitalize='none'
                 autoCorrect={false}
-                secureTextEntry={true} />
+                secureTextEntry={true} 
+                placeholderTextColor="#999999"/>
             </View>
 
             <TouchableOpacity style={styles.log}>
@@ -56,8 +57,8 @@ export default class Register extends Component {
                 </View>
               </TouchableOpacity>
             </View>
-            <View style={{marginTop:100}}>
-              <Image source={require('../Assets/apartment.jpg')} style={{height:'70%',width:'95%'}}></Image>
+            <View style={{marginTop:200}}>
+              <Image source={require('../Assets/apartment.jpg')} style={{height:'70%',width:'100%'}}></Image>
             </View>
           </View>
         </ScrollView>
@@ -72,7 +73,7 @@ const styles = StyleSheet.create({
   },
   header: {
     backgroundColor: '#ffffff',
-    padding: 20,
+    padding: 10,
     flexDirection: 'row'
   },
   headerText: {
@@ -93,7 +94,7 @@ const styles = StyleSheet.create({
     borderRadius: 8,
     padding: 10,
     margin: 5,
-    backgroundColor: 'lightgrey'
+    backgroundColor: '#E7EFFA',
 
   },
   log: {

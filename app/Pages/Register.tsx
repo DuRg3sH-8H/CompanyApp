@@ -1,7 +1,5 @@
 import { SafeAreaView,StatusBar, ScrollView, StyleSheet, Text, View,TextInput,TouchableOpacity,Image } from 'react-native'
 import React from 'react'
-
-import AntDesign from 'react-native-vector-icons/AntDesign'
 import Icons from '../Components/Icons'
 
 export default function Register() {
