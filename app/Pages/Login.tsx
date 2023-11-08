@@ -1,8 +1,9 @@
-import { Text, StyleSheet, View, StatusBar, TextInput, TouchableOpacity, ScrollView, SafeAreaView ,Image} from 'react-native'
+import { Text, StyleSheet, View, StatusBar, TextInput, TouchableOpacity, ScrollView, SafeAreaView, Image } from 'react-native'
 import React, { Component, useState } from 'react'
+import Icons from 'react-native-vector-icons/'
 
 
-import Arrowleft from 'react-native-vector-icons/AntDesign'
+//import Arrowleft from 'react-native-vector-icons/AntDesign'
 
 export default class Register extends Component {
   render() {
@@ -13,16 +14,16 @@ export default class Register extends Component {
           <StatusBar backgroundColor="white" barStyle="dark-content" />
           <View style={styles.header}>
             <TouchableOpacity>
-              < Arrowleft name='arrowleft' size={30} color="black" />
+              {/* < Arrowleft name='arrowleft' size={30} color="black" /> */}
 
             </TouchableOpacity>
-            <Text style={{fontSize:25,color:'black'}}>Login</Text>
+            <Text style={{ fontSize: 25, color: 'black' }}>Login</Text>
 
           </View>
           <View style={styles.container}>
-           
 
-          
+
+
             <View>
 
               <TextInput
@@ -37,19 +38,23 @@ export default class Register extends Component {
 
                 autoCapitalize='none'
                 autoCorrect={false}
-                secureTextEntry={true}  />
+                secureTextEntry={true} />
             </View>
 
             <TouchableOpacity style={styles.log}>
               <Text style={{ color: "#ffff", fontSize: 18, fontFamily: 'roboto' }}>LOGIN</Text>
             </TouchableOpacity>
-            <View>
+            <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
 
               <TouchableOpacity>
-               <View style={styles.ref}>
-               <Text style={{ color: 'blue', fontSize: 15, fontFamily: 'roboto',fontWeight:'bold'}}>REGISTER NOW!</Text>
-                <Text style={{ color: 'blue', fontSize: 15, fontFamily: 'roboto' ,fontWeight:'bold'}}>fORGOT PASSWORD?</Text>
-               </View>
+                <View style={styles.ref}>
+                  <Text style={{ color: 'blue', fontSize: 15, fontFamily: 'roboto', fontWeight: 'bold' }}>REGISTER NOW!</Text>
+                </View>
+              </TouchableOpacity>
+              <TouchableOpacity>
+                <View style={styles.ref}>
+                  <Text style={{ color: 'blue', fontSize: 15, fontFamily: 'roboto', fontWeight: 'bold' }}>fORGOT PASSWORD?</Text>
+                </View>
               </TouchableOpacity>
             </View>
             <View style={styles.img}>
@@ -81,8 +86,6 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#ffffff',
     padding: 16,
-    borderTopLeftRadius: 16,
-    borderTopRightRadius: 16,
     height: 780
   },
   textinput: {
@@ -92,7 +95,7 @@ const styles = StyleSheet.create({
     borderRadius: 8,
     padding: 10,
     margin: 5,
-    backgroundColor:'lightgrey'
+    backgroundColor: 'lightgrey'
 
   },
   log: {
@@ -102,18 +105,18 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     borderRadius: 10,
-    marginLeft:6,
-  
+    marginLeft: 6,
+
 
 
   },
-  ref:{
+  ref: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    
-    padding:10
+    padding: 10,
+    color: '#EEEEEE',
   },
-  img:{
+  img: {
     flex: 1,
 
     marginTop: 300,
