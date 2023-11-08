@@ -20,11 +20,7 @@ export default class Register extends Component {
 
           </View>
           <View style={styles.container}>
-
-
-
             <View>
-
               <TextInput
                 style={styles.textinput}
                 placeholder='Input Email Address' />
@@ -56,8 +52,8 @@ export default class Register extends Component {
                 </View>
               </TouchableOpacity>
             </View>
-            <View style={{marginTop:100}}>
-              <Image source={require('../Assets/apartment.jpg')} style={{height:'70%',width:'95%'}}></Image>
+            <View style={{marginTop:200}}>
+              <Image source={require('../Assets/apartment.jpg')} style={{height:'70%',width:'100%'}}></Image>
             </View>
           </View>
         </ScrollView>
