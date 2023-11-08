@@ -7,10 +7,8 @@ export default function App() {
   return (
     <SafeAreaView>
       <ScrollView>
-        <Register/>
+        <Login/>
       </ScrollView>
     </SafeAreaView>
   )
 }
-
-const styles = StyleSheet.create({})

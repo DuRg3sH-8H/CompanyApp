@@ -47,19 +47,18 @@ export default class Register extends Component {
 
               <TouchableOpacity>
                 <View style={styles.ref}>
-                  <Text style={{ color: 'blue', fontSize: 15, fontFamily: 'roboto', fontWeight: 'bold' }}>REGISTER NOW!</Text>
+                  <Text style={{ color: '#0bb9ff', fontSize: 15, fontFamily: 'roboto', fontWeight: 'bold' }}>REGISTER NOW!</Text>
                 </View>
               </TouchableOpacity>
               <TouchableOpacity>
                 <View style={styles.ref}>
-                  <Text style={{ color: 'blue', fontSize: 15, fontFamily: 'roboto', fontWeight: 'bold' }}>fORGOT PASSWORD?</Text>
+                  <Text style={{ color: '#0bb9ff', fontSize: 15, fontFamily: 'roboto', fontWeight: 'bold' }}>fORGOT PASSWORD?</Text>
                 </View>
               </TouchableOpacity>
             </View>
-            <View style={styles.img}>
-              <Image source={require('../Assets/houses.jpg')} ></Image>
+            <View style={{marginTop:100}}>
+              <Image source={require('../Assets/apartment.jpg')} style={{height:'70%',width:'95%'}}></Image>
             </View>
-
           </View>
         </ScrollView>
       </SafeAreaView>
@@ -112,16 +111,5 @@ const styles = StyleSheet.create({
     padding: 10,
     color: '#EEEEEE',
   },
-  img: {
-    flex: 1,
-
-    marginTop: 300,
-    height: '100%',
-    width: '100%',
-
-    alignItems: 'center',
-
-  }
-
 
 })

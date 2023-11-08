@@ -1,4 +1,4 @@
-import { SafeAreaView, ScrollView, StyleSheet, Text, View,TextInput,TouchableOpacity } from 'react-native'
+import { SafeAreaView,StatusBar, ScrollView, StyleSheet, Text, View,TextInput,TouchableOpacity,Image } from 'react-native'
 import React from 'react'
 
 import AntDesign from 'react-native-vector-icons/AntDesign'
@@ -8,9 +8,12 @@ export default function Register() {
   return (
     <SafeAreaView>
       <ScrollView>
+      <StatusBar backgroundColor="white" barStyle="dark-content" />
         <View style={{backgroundColor:'white',flex:1,minHeight:830}}>
           <View style={{flexDirection:'row',padding:10}}>
+            <TouchableOpacity>
             <Icons name='arrowleft'/>
+            </TouchableOpacity>
             <Text style={{fontFamily:'Roboto',fontSize:25,color:'black',paddingLeft:24}}>Register</Text>
           </View>
           <View
@@ -44,7 +47,13 @@ export default function Register() {
           </View>
           <TouchableOpacity style={styles.log}>
               <Text style={{ color: "#ffff", fontSize: 18, fontFamily: 'roboto' }}>REGISTER</Text>
-            </TouchableOpacity>
+          </TouchableOpacity>
+          <TouchableOpacity style={{alignItems:'center'}}>
+            <Text style={{color:'#0bb9ff'}}>Already Registered?<Text style={{color:'blue'}}> LOGIN</Text></Text>
+          </TouchableOpacity>
+          <View style={{marginTop:80}}>
+          <Image source={require('../Assets/apartment.jpg')} style={{height:'60%',width:'95%'}}></Image>
+          </View>
         </View>
       </ScrollView>
     </SafeAreaView>
@@ -60,7 +69,6 @@ const styles = StyleSheet.create({
     padding: 10,
     margin: 5,
     backgroundColor: '#E7EFFA',
-    
   },
   log: {
     height: 50,
@@ -70,6 +78,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     borderRadius: 10,
     marginLeft: 6,
-    marginBottom:19
+    marginBottom:19,
   },
 })
