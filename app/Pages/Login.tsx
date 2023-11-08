@@ -7,8 +7,7 @@ import Arrowleft from 'react-native-vector-icons/AntDesign'
 export default class Register extends Component {
   render() {
 
-    return (
-      <SafeAreaView style={styles.all}>
+    return (      <SafeAreaView style={styles.all}>
         <ScrollView>
           <StatusBar backgroundColor="white" barStyle="dark-content" />
           <View style={styles.header}>
@@ -34,6 +33,7 @@ export default class Register extends Component {
               <TextInput
                 style={styles.textinput}
                 placeholder='password'
+                
 
                 autoCapitalize='none'
                 autoCorrect={false}
@@ -48,7 +48,7 @@ export default class Register extends Component {
               <TouchableOpacity>
                <View style={styles.ref}>
                <Text style={{ color: 'blue', fontSize: 15, fontFamily: 'roboto',fontWeight:'bold'}}>REGISTER NOW!</Text>
-                <Text style={{ color: 'blue', fontSize: 15, fontFamily: 'roboto' ,fontWeight:'bold'}}>fORGOT PASSWORD?</Text>
+                <Text style={{ color: 'blue', fontSize: 15, fontFamily: 'roboto' ,fontWeight:'bold'}}>FORGOT PASSWORD?</Text>
                </View>
               </TouchableOpacity>
             </View>
