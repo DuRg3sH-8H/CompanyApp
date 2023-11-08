@@ -2,13 +2,13 @@ import { Text, StyleSheet, View, StatusBar, TextInput, TouchableOpacity, ScrollV
 import React, { Component, useState } from 'react'
 
 
-
 //import Arrowleft from 'react-native-vector-icons/AntDesign'
 
 export default class Register extends Component {
   render() {
 
-    return (      <SafeAreaView style={styles.all}>
+    return (
+      <SafeAreaView style={styles.all}>
         <ScrollView>
           <StatusBar backgroundColor="white" barStyle="dark-content" />
           <View style={styles.header}>
@@ -34,7 +34,6 @@ export default class Register extends Component {
               <TextInput
                 style={styles.textinput}
                 placeholder='password'
-                
 
                 autoCapitalize='none'
                 autoCorrect={false}
@@ -47,10 +46,14 @@ export default class Register extends Component {
             <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
 
               <TouchableOpacity>
-               <View style={styles.ref}>
-               <Text style={{ color: 'blue', fontSize: 15, fontFamily: 'roboto',fontWeight:'bold'}}>REGISTER NOW!</Text>
-                <Text style={{ color: 'blue', fontSize: 15, fontFamily: 'roboto' ,fontWeight:'bold'}}>fORGOT PASSWORD?</Text>
-               </View>
+                <View style={styles.ref}>
+                  <Text style={{ color: 'blue', fontSize: 15, fontFamily: 'roboto', fontWeight: 'bold' }}>REGISTER NOW!</Text>
+                </View>
+              </TouchableOpacity>
+              <TouchableOpacity>
+                <View style={styles.ref}>
+                  <Text style={{ color: 'blue', fontSize: 15, fontFamily: 'roboto', fontWeight: 'bold' }}>fORGOT PASSWORD?</Text>
+                </View>
               </TouchableOpacity>
             </View>
             <View style={styles.img}>
@@ -102,9 +105,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     borderRadius: 10,
     marginLeft: 6,
-
-
-
   },
   ref: {
     flexDirection: 'row',
