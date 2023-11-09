@@ -13,7 +13,6 @@ export default class Register extends Component {
           <View style={styles.header}>
             <TouchableOpacity>
               <Icons name = "arrowleft"/>
-
             </TouchableOpacity>
             <Text style={{ fontSize: 25, color: 'black', paddingLeft:24 }}>Login</Text>
           </View>
