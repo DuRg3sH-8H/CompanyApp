@@ -4,7 +4,7 @@ import React from 'react'
 import AntDesign from 'react-native-vector-icons/AntDesign'
 import Icons from '../Components/Icons'
 
-export default function Register() {
+export default function ForgotPassword() {
   return (
     <SafeAreaView>
       <ScrollView>
